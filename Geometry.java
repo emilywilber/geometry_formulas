@@ -10,9 +10,9 @@ public class Geometry
     /**
      * Calculates the area of a parallelogram.
      *
-     * @param b  length of base of parallelogram
-     * @param h  height of the parallelogram
-     * @return   area of the parallelogram
+     * @param length  length of base of parallelogram
+     * @param width   width of the parallelogram
+     * @return        area of the parallelogram
      */
     public static double parallelogramArea(double length, double width) 
     {
@@ -22,21 +22,19 @@ public class Geometry
     /**
      * Calculates the area of a triange.
      *
-     * @param b  length of base of triangle
-     * @param h  height of the triangle
-     * @return   area of the triangle
+     * @param base    length of base of triangle
+     * @param height  height of the triangle
+     * @return        area of the triangle
      */
     public static double triangleArea(double base, double height) 
     {
-        double area = base * height / 2.0;
-        
-        return area;
+        return base * height / 2.0;
     }
     
     /**
      * Calulates volume of a sphere.
-     * takes radius
-     * returns volume of the sphere
+     * @param radius   radius of sphere
+     * @return         volume of the sphere
      */ 
     public static double sphereVolume(double radius) 
     {
@@ -45,10 +43,10 @@ public class Geometry
     
     /**
      * Calulates area of a trapezoid.
-     * takes side a 
-     * takes side b
-     * takes height
-     * returns area of a trapezoid
+     * @param sideA   one base of trapezoid 
+     * @param sideB   another base of trapezoid
+     * @param height  height of trapezoid
+     * @return        area of a trapezoid
      */ 
     public static double trapezoidArea(double sideA, double sideB, double height) 
     {
@@ -57,10 +55,10 @@ public class Geometry
     
     /**
      * Calulates volume of a rectuangular prism.
-     * takes lenth
-     * takes width
-     * takes height
-     * returns volume of the rectangular prism
+     * @param lenth   length of rectangular prism
+     * @param width   width of rectangular prism
+     * @param height  height of rectangular prism
+     * @return        volume of the rectangular prism
      */ 
     public static double rectPrismVolume(double length, double width, double height) 
     {
@@ -68,13 +66,72 @@ public class Geometry
     }
     
     /**
-     * Calulates volume of a sphere.
-     * takes radius
-     * returns volume of the sphere
+     * Calulates volume of a cone.
+     * @param radius   radius of the cone
+     * @param height   height of the cone
+     * @return         volume of the cone
      */ 
     public static double coneVolume(double radius, double height) 
     {
         return Math.PI * radius * radius * (height / 3);
+    }
+    
+    /**
+     * Calulates surface area of a rectangular prism.
+     * @param length   length of the rectangular prism
+     * @param width    width of the rectangular prism
+     * @param height   height of the rectangular prism
+     * @return         surface area of a rectangular prism
+     */ 
+    public static double surfAreaRectPrism(double length, double height, double width) 
+    {
+        return 2 * ((width * length) + (height * length) + (height * width));
+    }
+    
+    /**
+     * Calulates surface area of a sphere.
+     * @param radius   radius of the sphere
+     * @return         area of a sphere
+     */ 
+    public static double surfAreaSphere(double radius) 
+    {
+        return 4 * Math.PI * (Math.pow(radius, 2));
+    }
+    
+    /**
+     * Calulates hypotenuse of a right triangle when given the lengths of two legs. 
+     * 
+     */ 
+    public static double hypotRightTriangle(double ff) 
+    {
+        return ff;
+    }
+    
+    /**
+     * Calculates distance between two points.
+     * 
+     */
+    public static double distance(double ff)
+    {
+        return ff;
+    }
+    
+    /**
+     * Calculates slope between two points.
+     * 
+     */
+    public static double slope(double ff)
+    {
+        return ff;
+    }
+    
+    /**
+     * Calculates triangle area based on three side lengths.
+     * 
+     */
+    public static double sideTriangleArea(double ff)
+    {
+        return ff;
     }
     
     public static void main(String[] args) 
